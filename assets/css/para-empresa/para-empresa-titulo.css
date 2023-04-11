@@ -1,0 +1,9 @@
+.para-empresa__titulo{
+    color: var(--cor-escura);
+    font-weight: 600;
+    font-size: 1.353rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 4rem 0;
+    
+}

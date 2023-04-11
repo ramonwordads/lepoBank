@@ -1,0 +1,197 @@
+/* Formulario img status, img icone check e texto*/
+.formulario__container{
+    margin: 0 auto;
+    
+    
+}
+
+.formulario__titulo{
+    color: var(--cor-escura-forte);
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    text-transform: capitalize;
+    padding: 1rem 0 0 0 ;
+}
+
+.formulario__descricao{
+    font-weight: 500;
+    color: var(--cor-escura);
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+
+.formulario__icon{
+    padding: 1rem 0;
+}
+
+
+/*Formulario campos*/
+.formulario__principal{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    height: 100%;
+    
+    
+    
+}
+
+.formulario__campo{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+/* Formulario campos fonts */
+.formulario__etiqueta{
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0 0 .5rem 0;
+}
+
+/*Formulario campo preenchimento */
+.formulario__campo-escrita{
+    border-style: none;
+    border: 1px solid var(--cor-escura);
+    border-radius: 10px;
+    padding: .7rem;
+    margin: 0 0 .5rem 0;
+}
+
+
+/*Formulario campo Endereço*/
+.formulario__campo-endereco{
+    font-weight: 600;
+    font-size: 1.2679rem;
+    color: var(--cor-escura);
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+/* Formulario termos*/
+.formulario__termos{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*Formulario botão avançar */
+
+.formulario__botao{
+    background-color: var(--cor-escura);
+    border-style: none;
+    border-radius: 6px;
+    color: var(--cor-clara);
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: .5rem;
+    
+}
+
+.formulario__botao:hover{
+
+    background-color: rgba(255, 0, 0, 0.726);
+}
+
+.formulario__botao-avancar{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* style mensagem de erro span*/
+
+.mensagem-erro-valida{
+    border: 1px solid rgb(4, 173, 4);
+}
+
+
+.mensagem-erro{
+    text-align: center;
+    color: red;
+}
+
+
+.formulario__descricao-two{
+    font-weight: 600;
+    padding: .5rem 0;
+}
+
+.icon-app{
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width:0){
+    .formulario__icon{
+        display: none;
+    }
+
+    .formulario__etapas{
+        width: 230px;
+        
+    }
+
+    .formulario__titulo{
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formulario__descricao{
+        text-align: center;
+    }
+
+    .formulario__container{
+        text-align: center;
+        width: 60%;
+    }
+
+    .formulario__principal{
+        max-width: 500px;
+        
+        
+    }
+    
+}
+
+
+@media screen and (min-width:768px){
+    .formulario__icon{
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .formulario__etapas{
+        width: 250px;
+        
+    }
+
+    .formulario__titulo{
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formulario__descricao{
+        text-align: center;
+    }
+
+    .formulario__campo{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+    .formulario__icon{
+        width: 300px;
+    }
+}
+
+

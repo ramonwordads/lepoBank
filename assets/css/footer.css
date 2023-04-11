@@ -1,0 +1,77 @@
+.rodape{
+    background-color: rgba(12, 8, 8, 0.932);
+    color: var(--cor-clara);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    width: 100vw;
+    margin: 4rem 0 0 0;
+}
+
+.rodape__titulo{
+    text-transform: uppercase;
+    text-align: justify;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.rodape__item{
+    font-size: .9rem;
+    text-transform: capitalize;
+    text-align: justify;
+
+    padding: .5rem 0;
+}
+
+.rodalogo{
+    padding: 0;
+}
+
+
+.rodape__item-link{
+    text-decoration: none;
+    color: var(--cor-clara);
+}
+
+.rodape__item-link:hover{
+    text-decoration: underline;
+}
+
+.redes-sociais__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0 0 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+@media screen and (min-width:0) {
+    .rodape__cliente{
+        display: none;
+    }
+
+    .rodape__empresa{
+        display: none;
+    }
+
+    .rodalogo{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .rodape__cliente{
+        display: block;
+    }
+
+    .rodape__empresa{
+        display: block;
+    }
+}

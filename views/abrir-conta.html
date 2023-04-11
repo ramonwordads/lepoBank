@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Conta!</title>
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+
+    <!--MAIN STYLE-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-lista__item">
+                    <a href="/" class="menu-lista__link">
+                        inicio
+                    </a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link">
+                        para você
+                    </a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link">
+                        para empresa
+                    </a>
+                </li>
+                
+                <h1 class="cabecalho-logo__lepo">Lepo<span class="cabecalho-logo__bank">Bank</span></h1>
+
+                <li class="menu-lista__item">
+                    <a href="./abrir-conta.html" class="menu-lista__link-botao menu-lista__link-botao--vermelho">
+                        abrir conta
+                    </a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link-botao">
+                        acessar conta
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="formulario">
+        <div class="formulario__container">
+            <img src="../assets/img/abrir-conta/formulario/logo-form.svg" alt="Icone duas mulheres segurando simbolo da letra B de banco'" class="formulario__icon">
+            <img src="../assets/img/abrir-conta/formcheck/formcheck-one.png" alt="Imagem status do preenchimento do formulario, parte 1." class="formulario__etapas">
+            <h2 class="formulario__titulo">
+                formulário de cadastro
+            </h2>
+            <p class="formulario__descricao">
+                preencha as informações abaixo para continuar
+            </p>
+        </div>
+
+
+        <form action="#" class="formulario__principal" data-formulario>
+
+            <fieldset class="formulario__campo">
+                <label for="nome" class="formulario__etiqueta">nome completo</label>
+                <input name="nome" id="nome" type="text" class="formulario__campo-escrita" minlength="2" maxlength="146" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="email" class="formulario__etiqueta">email</label>
+                <input name="email" id="email" type="email" class="formulario__campo-escrita" minlength="2" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="cpf" class="formulario__etiqueta">CPF</label>
+                <input name="cpf" id="cpf" type="text" class="formulario__campo-escrita" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required minlength="9" maxlength="11">
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="nascimento" class="formulario__etiqueta">data de nascimento</label>
+                <input name="nascimento" id="nascimento" type="date" class="formulario__campo-escrita" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo endereco-campo">
+                <legend class="formulario__campo-endereco">Informações de Endereço</legend>
+
+                <label for="cep" class="formulario__etiqueta">CEP</label>
+                <input name="cep" id="cep" type="text" class="formulario__campo-escrita" required >
+                <div id="erro"></div>
+                <span class="mensagem-erro"></span>
+                
+                <label for="bairro" class="formulario__etiqueta">bairro</label>
+                <input name="bairro" id="bairro" type="text" class="formulario__campo-escrita" required minlength="2">
+                <span class="mensagem-erro"></span>
+
+                <label for="logradouro" class="formulario__etiqueta">logradouro</label>
+                <input name="logradouro" id="logradouro" type="text" class="formulario__campo-escrita" required>
+                <span class="mensagem-erro"></span>
+            
+                <label for="cidade" class="formulario__etiqueta">cidade</label>
+                <input name="cidade" id="cidade" type="text" class="formulario__campo-escrita" required>
+                <span class="mensagem-erro"></span>
+            
+                <label for="estado" class="formulario__etiqueta">estado</label>
+                <input name="estado" id="estado" type="text" class="formulario__campo-escrita" required>
+                <span class="mensagem-erro"></span>
+
+                </fieldset>
+
+            <fieldset class="formulario__termos">
+                <input name="termos" type="checkbox" class="termos__input">
+                <label for="termos" class="formulario__termos-texto">Declaro que li e aceito todos os termos de privacidade!</label>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div class="formulario__botao-avancar">
+                <input value="Avançar" type="submit" class="formulario__botao" id="enviar" >
+                <span class="mensagem-erro"></span>
+            </div>
+        </form>
+
+    </section>
+
+
+    <footer class="rodape">
+        <section class="rodape__cliente">
+            <h3 class="rodape__titulo">cliente</h3>
+            <ul class="rodape__lista">
+                <li class="rodape__item"><a href="#" class="rodape__item-link">conta corrente</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">cartão de crédito</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">emprestimos</a></li>
+            </ul>
+        </section>
+
+        <section class="rodape__contato">
+            <h1 class="cabecalho-logo__lepo rodalogo">Lepo<span class="cabecalho-logo__bank">Bank</span></h1>
+            <ul class="rodape__lista redes-sociais__lista">
+                <li><img src="../assets/img/rodape/Facebook.png" alt="" class="rede-social"></li>
+                <li><img src="../assets/img/rodape/Instagram.png" alt="" class="rede-social"></li>
+                <li><img src="../assets/img/rodape/Whatsapp.png" alt="" class="rede-social"></li>
+            </ul>
+        </section>
+
+        <section class="rodape__empresa">
+            <h3 class="rodape__titulo">empresa</h3>
+            <ul class="rodape__lista ">
+                <li class="rodape__item"><a href="#" class="rodape__item-link">conta pessoa jurídica</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">maquininha</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">cartão empresarial</a></li>
+            </ul>
+        </section>
+
+
+    </footer>
+
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html>

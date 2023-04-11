@@ -1,0 +1,60 @@
+.para-empresa-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.para-empresa-lista__item{
+    width: 33%;
+}
+
+.para-empresa-lista__item__img{
+    display: block;
+    margin: 4em auto 0 auto;
+    
+
+}
+
+.para-empresa-lista__item__descricao{
+    font-weight: 600;
+    padding: .9rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 0 ){
+    .gallery{
+        display: none;
+    }
+
+    .para-empresa-lista__item{
+        width: 43%;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .gallery{
+        display: block;
+    }
+
+    .para-empresa-lista__item{
+        width: 33%;
+        
+    }
+
+    .controls{
+        display: none;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 1024px){
+    .controls{
+        display: block;
+    }
+}

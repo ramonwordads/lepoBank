@@ -1,0 +1,123 @@
+/* Logo menu*/
+.cabecalho-logo__lepo{
+    color: var(--cor-escura-forte);
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+.cabecalho-logo__bank{
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* cabecalho and menu */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 1em;
+    
+}
+
+.menu-lista{
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 2rem;
+    margin: 0 2rem;
+    text-transform: capitalize;
+}
+
+.menu-lista__link,a{
+    text-decoration: none;
+    color: var(--cor-preto);
+    
+}
+
+.menu-lista__link:hover{
+    text-decoration: underline;
+}
+
+
+.menu-lista__link-botao{
+    border: var(--cor-escura) 2px solid;
+    border-radius: 15px;
+    color: var(--cor-escura);
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.menu-lista__link-botao:hover{
+    background-color: var(--cor-preto);
+    color: var(--cor-clara);
+    
+}
+
+.menu-lista__link-botao--vermelho{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 0 ){
+    
+    .menu-lista__item{
+        display: none;
+    }
+    .abrir__conta, .acessar__conta{
+        display: block;
+    }
+
+    .cabecalho-logo__lepo{
+        display: none;
+    }
+
+    .menu-lista__link-botao{
+        padding: .9em 1.2em;
+        font-size: .7rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .menu-lista__item{
+        display: block;
+    }
+
+    .menu-lista__link-botao{
+        padding: 1em 1em;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cabecalho-logo__lepo{
+        display: block;
+        
+    }
+
+    .menu-lista__link-botao{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .cabecalho-logo__lepo{
+        padding-right: 15rem;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .cabecalho-logo__lepo{
+        padding-right: 30rem;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .cabecalho-logo__lepo{
+        padding-right: 40rem;
+    }
+}

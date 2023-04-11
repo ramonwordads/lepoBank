@@ -1,0 +1,26 @@
+@import url('./header.css');
+@import url('./banner/banner.css');
+@import url('./para-voce/para-voce.css');
+@import url('./para-empresa/para-empresa-titulo.css');
+@import url('./para-empresa/slideshow/gallery.min.css');
+@import url('./para-empresa/slideshow/gallery.theme.css');
+@import url('./para-empresa/para-empresa-lista.css');
+@import url('./footer.css');
+@import url('./abrir-conta/formulario/formulario.css');
+@import url('./abrir-conta2/abrir-conta2.css');
+
+:root{
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+    --cor-clara: #F6F1F1;
+    --cor-escura: #DC0000;
+    --cor-escura-forte: #E21818;
+    --cor-preto: #000000;
+    --cor-cinza: #161313a2;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    color: var(--cor-preto);
+    background-color: var(--cor-clara);
+}

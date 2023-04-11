@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LepoBank! Home</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!--STYLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <!--STYLE BASE-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link">
+                        inicio
+                    </a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link">
+                        para você
+                    </a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#" class="menu-lista__link">
+                        para empresa
+                    </a>
+                </li>
+                
+                <h1 class="cabecalho-logo__lepo">Lepo<span class="cabecalho-logo__bank">Bank</span></h1>
+
+                <li class="menu-lista__item abrir__conta">
+                    <a href="./views/abrir-conta.html" class="menu-lista__link-botao menu-lista__link-botao--vermelho">
+                        abrir conta
+                    </a>
+                </li>
+                <li class="menu-lista__item acessar__conta">
+                    <a href="#" class="menu-lista__link-botao">
+                        acessar conta
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">
+            Abra sua conta corrente em minutos e desfrute de toda simplicidade e agilidade de nossos serviços!
+        </h2>
+    </section>
+    
+    <section class="para-voce">
+        <h2 class="para-voce__titulo">
+            para você
+        </h2>
+        <ul class="para-voce-lista">
+            <li class="para-voce-lista__item">
+                <img src="./assets/img/para-voce/conta-corrente.png" alt="Imagem mulher sentada com a mão na cabeça usando notebook" class="para-voce-lista__item__img">
+                <h3 class="para-voce-lista__item__descricao">
+                    conta corrente
+                </h3>
+            </li>
+            <li class="para-voce-lista__item">
+                <img src="./assets/img/para-voce/conta-poupanca.png"  alt="Imagem homem no meio da rua em frente a um notebook comemorando" class="para-voce-lista__item__img">
+                <h3 class="para-voce-lista__item__descricao">
+                    conta poupança
+                </h3>
+            </li>
+            <li class="para-voce-lista__item">
+                <img src="./assets/img/para-voce/conta-salario.png" alt="Imagem homem sorrindo em frente a um notebook com papelada de dinheiro na mão" class="para-voce-lista__item__img">
+                <h3 class="para-voce-lista__item__descricao">
+                    conta salário
+                </h3>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="para-empresa">
+        <h2 class="para-empresa__titulo">
+            para sua empresa
+        </h2>
+        
+        <div class="gallery autoplay items-3">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item">
+                <span><img src="./assets/img/para-empresa/slideshow/slide1.png" alt="Imagem mulher de cabelos ruivos utilizando notebook e computador" class="item-img"></span>
+            </figure>
+
+            <figure class="item">
+                <span><img src="./assets/img/para-empresa/slideshow/slide2.png" alt="Imagem de uma mão digitando no notebook" class="item-img"></span>
+            </figure>
+
+            <figure class="item">
+                <span><img src="./assets/img/para-empresa/slideshow/slide3.png" alt="Imagem mulher jovem sorrindo com celular no ouvido" class="item-img"></span>
+            </figure>
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+                <a href="#item-3" class="control-button">.</a>
+            </div>
+
+        </div>
+
+        <ul class="para-empresa-lista">
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/pj-icon.png" alt="Icone de empresa" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">pessoa jurídica</h3>
+            </li>
+
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/cartao-empresarial-icon.png" alt="Icone cartão" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">cartão empresárial</h3>
+            </li>
+
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/emprestimo-icon.png" alt="Icone emprestando dinheiro" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">emprestimos</h3>
+            </li>
+
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/seguro-icon.png" alt="Icone de seguros" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">seguros</h3>
+            </li>
+
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/investimento-icon.png" alt="Icone de investimento" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">investimentos</h3>
+            </li>
+
+            <li class="para-empresa-lista__item">
+                <img src="./assets/img/para-empresa/icons/maquininha-icon.png" alt="Icone de maquina de pagamentos" class="para-empresa-lista__item__img">
+                <h3 class="para-empresa-lista__item__descricao">maquininha</h3>
+            </li>
+        </ul>
+        
+    </section>
+
+
+
+    <footer class="rodape">
+        <section class="rodape__cliente">
+            <h3 class="rodape__titulo">cliente</h3>
+            <ul class="rodape__lista">
+                <li class="rodape__item"><a href="#" class="rodape__item-link">conta corrente</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">cartão de crédito</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">emprestimos</a></li>
+            </ul>
+        </section>
+
+        <section class="rodape__contato">
+            <h1 class="cabecalho-logo__lepo rodalogo">Lepo<span class="cabecalho-logo__bank">Bank</span></h1>
+            <ul class="rodape__lista redes-sociais__lista">
+                <li><img src="./assets/img/rodape/Facebook.png" alt="" class="rede-social"></li>
+                <li><img src="./assets/img/rodape/Instagram.png" alt="" class="rede-social"></li>
+                <li><img src="./assets/img/rodape/Whatsapp.png" alt="" class="rede-social"></li>
+            </ul>
+        </section>
+
+        <section class="rodape__empresa">
+            <h3 class="rodape__titulo">empresa</h3>
+            <ul class="rodape__lista ">
+                <li class="rodape__item"><a href="#" class="rodape__item-link">conta pessoa jurídica</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">maquininha</a></li>
+                <li class="rodape__item"><a href="#" class="rodape__item-link">cartão empresarial</a></li>
+            </ul>
+        </section>
+
+
+    </footer>
+</body>
+</html>
