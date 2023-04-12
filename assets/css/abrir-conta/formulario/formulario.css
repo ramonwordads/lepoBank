@@ -78,7 +78,7 @@
 
 /*Formulario botão avançar */
 
-.formulario__botao{
+.formulario__botao, .camera__botao{
     background-color: var(--cor-escura);
     border-style: none;
     border-radius: 6px;
